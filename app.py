@@ -21,6 +21,7 @@ def connect_B2B_db():
     return pymysql.connect(HOST, USERNAME, PASSWORD, DATABASE_NAME,conv=converions)
  
 def execute_query(query, dBtype):
+    conn = ''
     try:
         if dBtype == "B2B":
             conn=connect_B2B_db()
@@ -31,8 +32,7 @@ def execute_query(query, dBtype):
     except Exception as e:
         print(e)
         return False, None
-    finally:
-        conn.close()
+
  
 main_query = f'''
 select now();
