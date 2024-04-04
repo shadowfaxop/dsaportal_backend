@@ -7,10 +7,10 @@ import pandas as pd
 import mysql.connector as db
  
  
-HOST="widget-dev.c8mrfyuk9eoc.ap-south-1.rds.amazonaws.com"
-USERNAME="posdev"
-PASSWORD="FAT4NMH%40ZWVTkt8"
-DATABASE_NAME="posdev"
+HOST="sql6.freemysqlhosting.net"
+USERNAME="sql6696749"
+PASSWORD="zb4jYPmbz4"
+DATABASE_NAME="sql6696749"
  
 def connect_B2B_db():
     converions = converters.conversions
