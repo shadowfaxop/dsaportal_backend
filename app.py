@@ -35,7 +35,7 @@ def execute_query(query, dBtype):
 
  
 main_query = f'''
-select now();
+select * from epl_staging;
 '''
 print("Executing MAIN QUERY ... ",datetime.now().strftime("%H:%M:%S"))
 success,result_main=execute_query(main_query, "POS")
